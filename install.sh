@@ -20,7 +20,7 @@ if [ "$answer" != "n" ]
 	sleep 5
 	sudo apt-get upgrade -y &&
 	sleep 5
-	sudo apt-get install mc python-requests python-setuptools python-dev build-essential libpcre3-dev libdvbcsa-dev git libcurl4-gnutls-dev debhelper cmake build-essential pkg-config libssl-dev gettext dvb-tools libdvbv5-0 liburiparser-dev liburiparser1 libavahi-client-dev zlib1g-dev libavcodec-dev libavutil-dev libavformat-dev libswscale-dev -y &&
+	sudo apt-get install mc  dvb-apps python-requests python-setuptools python-dev build-essential libpcre3-dev libdvbcsa-dev git libcurl4-gnutls-dev debhelper cmake build-essential pkg-config libssl-dev gettext dvb-tools libdvbv5-0 liburiparser-dev liburiparser1 libavahi-client-dev zlib1g-dev libavcodec-dev libavutil-dev libavformat-dev libswscale-dev -y &&
         sleep 5
 	cd /usr/src &&
 	sleep 5
