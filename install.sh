@@ -28,7 +28,8 @@ if [ "$answer" != "n" ]
 	sleep 5
 	cd tvheadend &&
 	sleep 5
-	./Autobuild.sh &&
+	#compile TVHeadend without ffmpeg (arm64 dosen#t support the ffmpeg)
+	AUTOBUILD_CONFIGURE_EXTRA=--disable-bintray_cache\ --disable-hdhomerun_static\ --disable-ffmpeg_static\  ./Autobuild.sh &&
 	sleep 5
 	
 	# install openmediavault
