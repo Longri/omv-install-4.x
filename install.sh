@@ -32,6 +32,12 @@ if [ "$answer" != "n" ]
 	AUTOBUILD_CONFIGURE_EXTRA=--disable-bintray_cache\ --disable-hdhomerun_static\ --disable-ffmpeg_static\  ./Autobuild.sh &&
 	sleep 5
 	
+	#install compiled TVHeadend
+	cd ..
+	sleep 5
+	sudo apt install ./tvheadend_4.2.7-22~gad7f16823_arm64.deb
+	sleep 5
+	
 	# install openmediavault
 	echo "deb http://packages.openmediavault.org/public arrakis main" > /etc/apt/sources.list.d/openmediavault.list &&
 	sleep 5
