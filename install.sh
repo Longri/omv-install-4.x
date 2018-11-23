@@ -35,13 +35,23 @@ if [ "$answer" != "n" ]
 	#install compiled TVHeadend
 	cd ..
 	sleep 5
-	sudo apt install ./tvheadend_4.2.7-22~gad7f16823_arm64.deb
+	#sudo apt install ./tvheadend_4.2.7-22~gad7f16823_arm64.deb
+	sudo apt install ./tvheadend_4.2.7-30~g70cc2b56d_arm64.deb -y
 	sleep 5
+	
+	#install Kodi
+	sudo apt-get install kodi -y
+	sleep 5
+	
+	#install Kodi Tvheadend-PlugIn
+	sudo apt-get install kodi-pvr-hts -y
+	sleep 5
+	
 	
 	# install openmediavault
 	echo "deb http://packages.openmediavault.org/public arrakis main" > /etc/apt/sources.list.d/openmediavault.list &&
 	sleep 5
-	apt install --force-yes curl wget apt-transport-https dirmngr &&
+	apt install curl wget apt-transport-https dirmngr -y&&
 	sleep 5
 	gpg --recv-keys 7E7A6C592EF35D13 &&
 	sleep 5
@@ -61,11 +71,11 @@ if [ "$answer" != "n" ]
 	sleep 1
 	apt update &&
 	sleep 1
-	apt-get install --force-yes openmediavault-keyring postfix ssl-cert &&
+	apt-get install  openmediavault-keyring postfix ssl-cert  -y&&
 	sleep 1
 	apt update &&
 	sleep 1
-	apt-get --yes --force-yes --allow-unauthenticated install openmediavault &&
+	apt-get  --allow-unauthenticated install openmediavault -y&&
 	sleep 1
 	wget http://omv-extras.org/openmediavault-omvextrasorg_latest_all4.deb
 	sleep 1
