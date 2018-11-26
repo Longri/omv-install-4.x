@@ -38,7 +38,7 @@ if [ "$answer" != "n" ]
 	cd ..
 	sleep 5
 	#sudo apt install ./tvheadend_4.2.7-22~gad7f16823_arm64.deb
-	sudo apt install ./tvheadend_4.2.7-33~g55acbe1cf_arm64.deb -y &&
+	sudo apt install ./tvheadend_4.2.7-?????????????arm64.deb -y &&
 	sleep 5
 	
 	#install Kodi
