@@ -25,6 +25,8 @@ if [ "$answer" != "n" ]
 	cd /usr/src &&
 	sleep 5
 	sudo git clone -b release/4.2 https://github.com/tvheadend/tvheadend &&
+	
+	
 	sleep 5
 	cd tvheadend &&
 	sleep 5
@@ -36,15 +38,15 @@ if [ "$answer" != "n" ]
 	cd ..
 	sleep 5
 	#sudo apt install ./tvheadend_4.2.7-22~gad7f16823_arm64.deb
-	sudo apt install ./tvheadend_4.2.7-30~g70cc2b56d_arm64.deb -y
+	sudo apt install ./tvheadend_4.2.7-33~g55acbe1cf_arm64.deb -y &&
 	sleep 5
 	
 	#install Kodi
-	sudo apt-get install kodi -y
+	sudo apt-get install kodi -y &&
 	sleep 5
 	
 	#install Kodi Tvheadend-PlugIn
-	sudo apt-get install kodi-pvr-hts -y
+	sudo apt-get install kodi-pvr-hts -y &&
 	sleep 5
 	
 	
